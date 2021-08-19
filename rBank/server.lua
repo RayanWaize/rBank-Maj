@@ -68,9 +68,8 @@ AddEventHandler('gBank:transfer', function(to, amountt)
 			else
 				xPlayer.removeAccountMoney('bank', tonumber(amountt))
 				zPlayer.addAccountMoney('bank', tonumber(amountt))
-				TriggerClientEvent('esx:showAdvancedNotification', _source, 'Banque', "Succès", "Transfert réussi.")
-				TriggerClientEvent('esx:showAdvancedNotification', _source, 'Banque', "Problème", "- " .. amount .." $")
-				TriggerClientEvent('esx:showAdvancedNotification', zPlayer, 'Banque', "Succès", "Vous recevez un virement de ".. amountt .." $", 'CHAR_BANK', 10)
+                    TriggerClientEvent('esx:showAdvancedNotification', _source, "Succès", 'Banque', "Transfert réussi vous avez envoyé "..tonumber(amountt).." $ à "..zPlayer.getName(), 'CHAR_BANK', 10)
+                    TriggerClientEvent('esx:showAdvancedNotification', to, "Banque", 'Banque', "Vous avez recu "..tonumber(amountt).." $ de la part de "..xPlayer.getName(), 'CHAR_BANK', 10)
 			end
 		end
 	end
