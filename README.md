@@ -7,4 +7,7 @@ Menu Banque/ATM RUI tourne à 0.01ms.
 
 ━━━━━━━━━━━━━━━━━━━━━━━
 
+Discord : https://discord.gg/QfafnbUDYH
+
+
 - __[Vidéo présentation](https://streamable.com/vvjzud)__
